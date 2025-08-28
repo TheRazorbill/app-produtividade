@@ -1,0 +1,115 @@
+/* Reset Básico e Estilos Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container Principal da Aplicação */
+.app-container {
+    width: 100%;
+    max-width: 600px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+/* Cabeçalho */
+.header h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Formulário de Adicionar Tarefa */
+.task-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.task-input {
+    flex-grow: 1; 
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.task-input:focus {
+    outline: none;
+    border-color: #4a90e2;
+}
+
+.add-button {
+    padding: 0 20px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-button:hover {
+    background-color: #357abd;
+}
+
+/* Lista de Tarefas */
+.task-list {
+    list-style: none;
+}
+
+/* Estilo para um item da lista (será criado com JS) */
+.task-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 10px;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.2s;
+}
+
+.task-item:last-child {
+    border-bottom: none;
+}
+
+/* Rodapé e Filtros */
+.footer {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.filters .filter-btn {
+    background: none;
+    border: 1px solid transparent;
+    color: #777;
+    margin: 0 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.filters .filter-btn:hover {
+    color: #333;
+    background-color: #f0f0f0;
+}
+
+.filters .filter-btn.active {
+    border-color: #4a90e2;
+    color: #4a90e2;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App de Produtividade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <header class="header">
+            <h1>Minhas Tarefas</h1>
+        </header>
+
+        <main class="main-content">
+            <form id="task-form" class="task-form">
+                <input 
+                    type="text" 
+                    id="task-input" 
+                    class="task-input"
+                    placeholder="O que você precisa fazer?"
+                    autocomplete="off"
+                >
+                <button type="submit" class="add-button">Adicionar</button>
+            </form>
+
+            <section class="tasks-container">
+                <ul id="task-list" class="task-list">
+                    </ul>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="filters">
+                <button class="filter-btn" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="active">Ativos</button>
+                <button class="filter-btn" data-filter="completed">Completos</button>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
