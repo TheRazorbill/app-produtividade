@@ -22,7 +22,7 @@ A aplicação de lista de tarefas inclui as seguintes funcionalidades:
 Este projeto foi construído utilizando as tecnologias fundamentais do desenvolvimento front-end:
 
 - **HTML5:** Para a estrutura semântica do conteúdo da aplicação.
-- **CSS3:** (Não incluso no código, mas necessário para a estilização) Para o design, layout e a aparência visual dos componentes.
+- **CSS3:** Para o design, layout e a aparência visual dos componentes.
 - **JavaScript:** Para toda a lógica da aplicação, interatividade, manipulação do DOM e gerenciamento do estado das tarefas.
 
 ---
