@@ -13,7 +13,7 @@ A aplicação de lista de tarefas inclui as seguintes funcionalidades:
 - **Remover Tarefas:** Exclua tarefas da lista com um botão de remoção individual.
 - **Filtragem de Tarefas:** Visualize todas as tarefas, apenas as ativas ou apenas as concluídas.
 - **Persistência de Dados:** As tarefas são salvas no `localStorage` do navegador, garantindo que elas não sejam perdidas ao recarregar a página.
-- **Design Responsivo (Implícito):** A estrutura HTML e o código JavaScript são flexíveis e prontos para serem estilizados com um layout responsivo.
+- **Design Responsivo :** A estrutura HTML e o código JavaScript são flexíveis e prontos para serem estilizados com um layout responsivo.
 
 ---
 
