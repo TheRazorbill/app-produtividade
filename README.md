@@ -33,12 +33,12 @@ Para executar o projeto na sua máquina, não é necessário um servidor ou depe
 
 1.  **Clone o repositório** (ou simplesmente salve o código JavaScript em um arquivo, por exemplo `script.js`).
     ```bash
-    git clone [URL_DO_SEU_REPOSITORIO]
+    git clone [https://github.com/TheRazorbill/app-produtividade.git]
     ```
 
 2.  **Navegue até o diretório do projeto:**
     ```bash
-    cd [NOME_DO_DIRETORIO]
+    cd [https://github.com/TheRazorbill/app-produtividade]
     ```
 
 3.  **Crie um arquivo `index.html`** e adicione o código JavaScript (ou vincule o arquivo `.js`).
