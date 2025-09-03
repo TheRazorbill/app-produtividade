@@ -4,6 +4,11 @@ Este repositório contém o código de uma aplicação simples e funcional de li
 
 ---
 
+## 🌐 Link para utilizar
+
+- [-> Clique aqui <-](https://therazorbill.github.io/app-produtividade/)
+
+---
 ## ✨ Funcionalidades
 
 A aplicação de lista de tarefas inclui as seguintes funcionalidades:
