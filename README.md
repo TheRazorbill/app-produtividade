@@ -4,12 +4,12 @@ Este repositório contém o código de uma aplicação simples e funcional de li
 
 ---
 
-## 🌐 Link para utilizar
+##  Link para utilizar
 
 - [-> Clique aqui <-](https://therazorbill.github.io/app-produtividade/)
 
 ---
-## ✨ Funcionalidades
+##  Funcionalidades
 
 A aplicação de lista de tarefas inclui as seguintes funcionalidades:
 
@@ -22,7 +22,7 @@ A aplicação de lista de tarefas inclui as seguintes funcionalidades:
 
 ---
 
-## 💻 Tecnologias Utilizadas
+##  Tecnologias Utilizadas
 
 Este projeto foi construído utilizando as tecnologias fundamentais do desenvolvimento front-end:
 
@@ -32,7 +32,7 @@ Este projeto foi construído utilizando as tecnologias fundamentais do desenvolv
 
 ---
 
-## ⚙️ Como Executar Localmente
+##  Como Executar Localmente
 
 Para executar o projeto na sua máquina, não é necessário um servidor ou dependências complexas. Basta seguir os passos abaixo:
 
