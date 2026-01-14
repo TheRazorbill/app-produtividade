@@ -1,7 +1,3 @@
-// ==========================
-//      ESTADO DA APLICAÇÃO (STATE)
-// ==========================
-
 let tasks = [];
 let currentFilter = 'all';
 
@@ -10,18 +6,10 @@ if (savedTasks) {
     tasks = JSON.parse(savedTasks);
 }
 
-// ==========================
-//      ELEMENTOS DO DOM
-// ==========================
-
 const taskForm = document.getElementById('task-form');
 const taskInput = document.getElementById('task-input');
 const taskList = document.getElementById('task-list');
 const filtersContainer = document.querySelector('.filters'); 
-
-// ==========================
-//      FUNÇÕES
-// ==========================
 
 function saveTasks() {
     localStorage.setItem('tasks', JSON.stringify(tasks));
@@ -67,10 +55,6 @@ function renderTasks() {
         taskList.appendChild(li);
     });
 }
-
-// ==========================
-//      EVENTOS
-// ==========================
 
 taskForm.addEventListener('submit', function(event) {
     event.preventDefault();
