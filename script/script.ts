@@ -11,10 +11,14 @@ if (savedTasks) {
   tasks = JSON.parse(savedTasks);
 }
 
-const taskForm = document.getElementById("task-form");
-const taskInput = document.getElementById("task-input");
-const taskList = document.getElementById("task-list");
-const filtersContainer = document.querySelector(".filters");
+const taskForm = document.getElementById("task-form") as HTMLFormElement | null;
+const taskInput = document.getElementById("task-input") as HTMLInputElement | null;
+const taskList = document.getElementById("task-list") as HTMLUListElement | null;
+const filtersContainer = document.getElementById("filters-container") as HTMLElement | null;
+
+if (!taskForm || !taskInput || !taskList || !filtersContainer) {
+    throw new Error("Missing required DOM elements: task-form/task-input/task-list/filters-container");
+}
 
 function saveTasks() {
   if (savedTasks) {
@@ -81,9 +85,12 @@ taskForm.addEventListener("submit", function (event) {
 });
 
 taskList.addEventListener("click", function (event) {
-  const clickedElement = event.target;
-  if (clickedElement.type === "checkbox") {
-    const taskLi = clickedElement.closest(".task-item");
+  const target = event.target;
+  if (!(target instanceof HTMLElement)) return;
+
+  if (target instanceof HTMLInputElement && target.type === "checkbox") {
+    const taskLi = target.closest(".task-item") as HTMLLIElement | null;
+    if (!taskLi) return;
     const taskId = Number(taskLi.dataset.id);
     const task = tasks.find((t) => t.id === taskId);
     if (task) {
@@ -91,9 +98,11 @@ taskList.addEventListener("click", function (event) {
       saveTasks();
       renderTasks();
     }
+    return;
   }
-  if (clickedElement.closest(".delete-button")) {
-    const taskLi = clickedElement.closest(".task-item");
+  if (target.closest(".delete-button")) {
+    const taskLi = target.closest(".task-item") as HTMLElement | null;
+    if(!taskLi) return;
     const taskId = Number(taskLi.dataset.id);
     tasks = tasks.filter((t) => t.id !== taskId);
     saveTasks();
@@ -102,9 +111,10 @@ taskList.addEventListener("click", function (event) {
 });
 
 filtersContainer.addEventListener("click", function (event) {
-  const clickedElement = event.target;
-  if (clickedElement.classList.contains("filter-btn")) {
-    currentFilter = clickedElement.dataset.filter;
+  const target = event.target;
+  if (!(target instanceof HTMLElement)) return;
+  if (target.classList.contains("filter-btn")) {
+    currentFilter = String(target.dataset.filter);
     renderTasks();
   }
 });
